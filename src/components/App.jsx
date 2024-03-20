@@ -1,8 +1,9 @@
-import dataProfile from './data/Profile.json'
+import dataProfile from '../data/Profile.json'
+import Friends from '../data/Friends.json'
 
-import Profile from './components/Profile/Profile'
-import FriendsList from './components/FriendsList/FriendsList'
-import Transactions from './components/Transactions/Transactions'
+import Profile from './Profile/Profile'
+import FriendsList from './FriendsList/FriendsList'
+import Transactions from './Transactions/Transactions'
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
         avatar={dataProfile.avatar}
         stats={dataProfile.stats}
       />
-      <FriendsList />
+      <FriendsList friends={Friends} />
       <Transactions />
     </>
   )
