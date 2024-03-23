@@ -4,11 +4,11 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
         <>
             <div className={css.profile}>
-                <div className={css.description}>
+                <div className={css.prof}>
                     <img
                         src={avatar}
                         alt="User avatar"
-                        className={css.avatar}
+                        className={css.image}
                     />
                     <p className={css.name}>{username}</p>
                     <p className={css.tag}>@{tag}</p>
@@ -16,17 +16,17 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
                 </div>
 
                 <ul className={css.stats}>
-                    <li>
-                        <span className={css.label}>Followers</span>
-                        <span className={css.quantity}>{stats.followers}</span>
+                    <li className={css.profileListItem}>
+                        <span className={css.profileSpan}>Followers</span>
+                        <span className={css.profileInfoSpan}>{stats.followers}</span>
                     </li>
-                    <li>
-                        <span className={css.label}>Views</span>
-                        <span className={css.quantity}>{stats.views}</span>
+                    <li className={css.profileListItem}>
+                        <span className={css.profileSpan}>Views</span>
+                        <span className={css.profileInfoSpan}>{stats.views}</span>
                     </li>
-                    <li>
-                        <span className={css.label}>Likes</span>
-                        <span className={css.quantity}>{stats.likes}</span>
+                    <li className={css.profileListItem}>
+                        <span className={css.profileSpan}>Likes</span>
+                        <span className={css.profileInfoSpan}>{stats.likes}</span>
                     </li>
                 </ul>
             </div>
