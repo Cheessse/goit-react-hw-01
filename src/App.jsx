@@ -1,15 +1,16 @@
-import dataProfile from '../data/Profile.json'
-import Friends from '../data/Friends.json'
+import dataProfile from './data/Profile.json'
+import Friends from './data/Friends.json'
 
-import Profile from './Profile/Profile'
-import FriendsList from './FriendsList/FriendsList'
-import Transactions from './Transactions/Transactions'
+import Profile from './components/Profile/Profile'
+import FriendsList from './components/FriendsList/FriendsList'
+import Transactions from './components/Transactions/Transactions'
 
+import './App.css'
 
 const App = () => {
 
   return (
-    <>
+   <>
       <Profile
         username={dataProfile.username}
         tag={dataProfile.tag}
