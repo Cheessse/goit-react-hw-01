@@ -40,6 +40,7 @@
     gap: 10px;
     border-top: 2px solid #0a0a0a65;
     background-color: #A9A9A9;
+    border-radius: 0 0 4px 4px;
 }
 
 .profileListItem {
@@ -47,7 +48,6 @@
     flex-direction: column;
     width: calc((100% - 20px) / 3);
     border-left: 2px solid #0a0a0a65;
-
 }
 
 .profileListItem:first-child {

@@ -1,5 +1,6 @@
 import dataProfile from './data/Profile.json'
-import Friends from './data/Friends.json'
+import friends from './data/Friends.json'
+import transactions from './data/Transactions.json'
 
 import Profile from './components/Profile/Profile'
 import FriendsList from './components/FriendsList/FriendsList'
@@ -18,8 +19,8 @@ const App = () => {
         avatar={dataProfile.avatar}
         stats={dataProfile.stats}
       />
-      <FriendsList friends={Friends} />
-      <Transactions />
+      <FriendsList friends={friends} />
+      <Transactions items={transactions} />
     </>
   )
 }
